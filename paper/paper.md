@@ -40,15 +40,15 @@ bibliography: paper.bib
 
 # Summary
 
-`Potamides` is a Python package for inferring the mass distribution of galaxies
+`Potamides` is a Python package for inferring the mass distributions of galaxies
 from the projected shapes of stellar streams in imaging data. Stellar streams
 are elongated structures produced when star clusters or dwarf galaxies are
 tidally disrupted by their host. Because their projected tracks carry
 information about the host's gravitational field, the local curvature of a
-stream can constrain the underlying potential.
+stream can constrain the underlying gravitational potential.
 
 The package implements and extends the curvature-based likelihood framework of
-[@Nibauer:2023]. Rather than generating a full dynamical realization of a
+@Nibauer:2023. Rather than generating a full dynamical realization of a
 stellar stream for each trial model, `Potamides` represents observed stream
 tracks with JAX-based splines [@jax]. It evaluates gravitational accelerations
 in candidate potentials and compares them directly to the local stream geometry.
@@ -62,7 +62,7 @@ across many potential models.
 Stellar streams are popular tracers of galactic gravitational potentials and the
 dark matter halos that dominate galaxies [@Bonaca:2014]. For external galaxies,
 the observed dynamical information is often limited to projected stream
-morphology. The curvature-based method of Nibauer et al. [@Nibauer:2023]
+morphology. The curvature-based method of @Nibauer:2023
 addresses this regime by using the local relationship between stream curvature
 and gravitational acceleration to directly constrain the potential's geometry
 from the projected stream track.
@@ -147,7 +147,7 @@ the primary implementation for curvature-based inference.
 
 The software demonstrates immediate scientific value by providing tested,
 high-performance, reproducible capabilities. Notably, `Potamides` successfully
-reproduces the foundational research results of [@Nibauer:2023]. By streamlining
+reproduces the foundational research results of @Nibauer:2023. By streamlining
 the process from annotating stream segments to calculating potential likelihoods
 on standard hardware, `Potamides` serves as a highly practical tool for
 researchers exploring gravitational potentials through stream morphology.
